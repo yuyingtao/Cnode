@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+
+  <p>{{ 'StrIng' | upper }}</p>
+
+  <script>
+    function lower(str) {
+      return str.toLowerCase()
+    }
+  </script>
+
+  <p>{{ data.str }}</p>
+
+  {% if data.bool===false %}
+  <p>
+    if true I will show
+  </p>
+  {% endif %}<!--关闭标签-->
+
+  <!--遍历一个数组-->
+  {% for p in data.array %}
+  <p>{{p}}</p>
+  <!--过滤器类似于函数-->
+  <p>{{'String'| lower}}</p>
+  {% endfor %}
+   <!--遍历对象-->
+  {% for key, value in data.obj %}
+  <p>{{key}}: {{value}}</p>
+  {% endfor %}
+  <script src="/javascripts/index.js"></script>
+  <script>
+   console.log({{ data | dump | safe }});
+  </script>
+</body>
+</html>

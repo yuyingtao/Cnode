@@ -1,0 +1,58 @@
+#tabs{
+    background-color: #ededed;
+    margin-top: 20px;
+    padding: 10px;
+}
+#tabs .tab{
+
+    display: inline-block;
+    margin-right:15px ;
+}
+#tabs .tab a{
+    color: #80bd01;
+    text-decoration: none;
+}
+.topics{
+    list-style: none;
+    padding:0;
+    background-color: #ffffff;
+}
+.cell{
+
+}
+.topic-creator-avator img{
+   width: 30px ;
+    height: 30px;
+    vertical-align: middle;
+}
+.topics .tag{
+background-color: #80bd01;
+    display: inline-block;
+    border-radius:3px;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px;
+
+}
+.title-and-num{
+    display: inline-block;
+    vertical-align: middle;
+}
+.title{
+    display: block;
+}
+.topic-view-number{
+    font-size: 12px;
+}
+.replys{
+    color: #9e78c0;
+    font-size: 14px;
+}
+.views{
+    color: #b4b4b4;
+}
+.last-reply-time{
+    float: right;
+    font-size: 12px;
+    color: #b4b4b4;
+}
